@@ -1,0 +1,68 @@
+a {
+    color: lightgreen;
+}
+
+header {
+    background-color: #555555;
+    color: #ffffff;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(sfondo.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+    header:hover {
+        background-color: #aaaaaa;
+    }
+*/
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    padding: 4px 8px;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+#menu a:hover {
+    color: lightgreen;
+    text-decoration: underline;
+}
+
+.top-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 30px;
+}
+
+body {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    #menu li {
+        display: inline;
+    }
+
+    header {
+        height: 80vh;
+        
+    }
+}
