@@ -1,6 +1,7 @@
 html, 
 body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -99,6 +100,46 @@ body {
     display: inline;
 }
 
+#bottom-footer div.last li + li {
+    margin-left: 1rem;
+}
+
+/** 
+aggiungo a tutti un margin inferiore e poi con la regola
+che segue la rimuovo solo dal ultimo elemento 
+*/
+#bottom-footer div.last div {
+    margin-bottom: 1rem;
+}
+
+#bottom-footer div.last div:last-child {
+    margin-bottom: 0;
+}
+
+/** / **/
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/** NOTIZIE **/
+
+
+.articles__wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.articles article {
+    width: 100%;
+}
+
+.articles img {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+}
 
 
 
