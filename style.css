@@ -1,3 +1,8 @@
+html, 
+body {
+    margin: 0;
+}
+
 a {
     color: lightgreen;
 }
@@ -55,6 +60,50 @@ header {
 body {
     margin: 0;
 }
+
+/** FOOTER **/
+
+#bottom-footer {
+    background-color: #eee;
+    color: #333;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#bottom-footer a {
+    color: #666;
+    text-decoration: none;
+}
+
+#bottom-footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#bottom-footer > div {
+    width: 100%;
+    padding: 2rem;
+}
+
+#bottom-footer .finanziamenti img {
+    width: 90%;
+    height: auto;
+}
+#bottom-footer div.last {
+    text-align: right;
+}
+
+#bottom-footer div.last li {
+    display: inline;
+}
+
+
+
+
+
+
 
 @media (min-width: 768px) {
     #menu li {
