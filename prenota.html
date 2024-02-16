@@ -2,11 +2,11 @@
 <html>
 
 <head>
-    <title>Prima Pagina! </title>
+    <title>Prenota la tua visita</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="homepage">
+<body class="page">
     <header>
         <div class="top-menu">
             <div id="logo">
@@ -42,39 +42,37 @@
         <h1>Friuland!!!</h1>
         <h2>Il parco divertimento delle pannocchie</h2>
 
-        <section class="articles">
-            <h3>Ultime notizie</h3>
+        <form>
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" required />
 
-            <div class="articles__wrapper">
-                <article>
-                    <picture>
-                        <img alt="immagine notizia" src="/articolo_1.webp"  width="400" height="196" />
-                    </picture>
+            <label for="cognome">Cognome</label>
+            <input id="cognome" name="cognome" type="text" required />
 
-                    <h4>Titolo della notizia</h4>
+            <label for="data">Data di prenotazione</label>
+            <input id="data" name="data" type="date" required />
 
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Esse enim corrupti cumque, blanditiis hic dolore illum 
-                        excepturi maxime accusamus, ipsam temporibus culpa exercitationem
-                    </p>
+            <label for="num_adulti">Adulti</label>
+            <select id="num_adulti" name="num_adulti">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
 
-                    <a href="/news/articolo_1.html" title="Titolo della notizia">LEGGI</a>
-                </article>                
-                
-                <article>
-                    <picture>
-                        <img alt="immagine notizia" src="/articolo_2.jpg" width="400" height="196" />
-                    </picture>
+            <label for="num_ridotti">Ridotti</label>
+            <select id="num_ridotti" name="num_ridotti">
+                <option value="0">Nessun ridotto</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
 
-                    <h4>Titolo della notizia molto più lunga di quell'altra</h4>
-
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br />
-                        Quod nesciunt unde soluta, accusantium animi a ab porro voluptatibus </p>
-
-                    <a href="/news/articolo_2.html" title="Titolo della notizia molto più lunga di quell'altra">LEGGI</a>
-                </article>
-            </div>
-        </section>
+            <input type="submit" value="Invia richiesta" />
+        </form>
     </main>
 
     <footer id="bottom-footer">

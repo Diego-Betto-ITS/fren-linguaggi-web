@@ -141,10 +141,60 @@ che segue la rimuovo solo dal ultimo elemento
     height: auto;
 }
 
+.articles {
+    margin-top: 60px;
+}
 
+.articles article {
+    width: 500px;
+    margin-bottom: 50px;
+}
 
+.articles img {
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+}
 
+.articles h4 {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
 
+.articles a {
+    text-decoration: none;
+    background-color: #c61620;
+    color: #fff;
+    padding: 4px 10px;
+}
+
+.articles a:hover {
+    background-color: #ff6666;
+}
+
+.articles__wrapper {
+    justify-content: space-evenly;
+}
+
+.articles h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #888;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+h2 {
+    margin-top: 5px;
+}
 
 @media (min-width: 768px) {
     #menu li {
@@ -152,7 +202,10 @@ che segue la rimuovo solo dal ultimo elemento
     }
 
     header {
+        height: 80px;        
+    }
+
+    .homepage header {
         height: 80vh;
-        
     }
 }
