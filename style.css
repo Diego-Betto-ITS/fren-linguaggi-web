@@ -5,7 +5,7 @@ body {
 }
 
 a {
-    color: lightgreen;
+    color: #137713;
 }
 
 header {
@@ -46,7 +46,7 @@ header {
 }
 
 #menu a:hover {
-    color: lightgreen;
+    color: #137713;
     text-decoration: underline;
 }
 
