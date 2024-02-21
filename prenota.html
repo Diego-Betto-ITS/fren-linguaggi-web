@@ -38,41 +38,64 @@
     </header>
     <!-- esempio di commento -->
 
-    <main>
+    <main class="prenota">
         <h1>Friuland!!!</h1>
         <h2>Il parco divertimento delle pannocchie</h2>
 
-        <form>
-            <label for="nome">Nome</label>
-            <input id="nome" name="nome" type="text" required />
+        <div class="form-wrapper">
+            <form method="POST" action="/richiesta">
+                <div>
+                    <label for="nome">Nome</label>
+                    <input id="nome" name="nome" type="text" required />
+                </div>
 
-            <label for="cognome">Cognome</label>
-            <input id="cognome" name="cognome" type="text" required />
+                <div>
+                    <label for="cognome">Cognome</label>
+                    <input id="cognome" name="cognome" type="text" required />
+                </div>
 
-            <label for="data">Data di prenotazione</label>
-            <input id="data" name="data" type="date" required />
+                <div>
+                    <label for="data">Data di prenotazione</label>
+                    <input id="data" name="data" type="date" required />
+                </div>
 
-            <label for="num_adulti">Adulti</label>
-            <select id="num_adulti" name="num_adulti">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
+                <div>
+                    <label for="num_adulti">Adulti</label>
+                    <select id="num_adulti" name="num_adulti">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
 
-            <label for="num_ridotti">Ridotti</label>
-            <select id="num_ridotti" name="num_ridotti">
-                <option value="0">Nessun ridotto</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
+                <div>
+                    <label for="num_ridotti">Ridotti</label>
+                    <select id="num_ridotti" name="num_ridotti">
+                        <option value="0">Nessun ridotto</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
 
-            <input type="submit" value="Invia richiesta" />
-        </form>
+                <div class="align-column">
+                    <label for="note">Descrivi la richiesta</label>
+                    <textarea
+                        id="note"
+                        name="note"
+                        rows="5"
+                        cols="20"
+                        placeholder="inserisci la tua nota"
+                    ></textarea>
+                </div>
+
+                <input type="submit" value="Invia richiesta" />
+            </form>
+        </div>
     </main>
 
     <footer id="bottom-footer">
