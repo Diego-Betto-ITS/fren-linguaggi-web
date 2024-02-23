@@ -2,7 +2,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Remove default margin */
@@ -16,37 +16,37 @@ figure,
 blockquote,
 dl,
 dd {
-  margin-block-end: 0;
+    margin-block-end: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
-  list-style: none;
+    list-style: none;
 }
 
 /* Set core root defaults */
 html:focus-within {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
 }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+    text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
 img,
 picture {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -54,32 +54,60 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+    font: inherit;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-   scroll-behavior: auto;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
 
 
+/* FONT */
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
 
 
-html, 
+/* NOSTRO CSS */
+
+html,
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    color: #333;
 }
 
 a {
@@ -93,17 +121,17 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(sfondo.jpg);
+    background-image: url(/template/images/sfondo.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/*
-    header:hover {
-        background-color: #aaaaaa;
-    }
-*/
+#menu {
+    display: flex;
+    align-items: center;
+}
+
 #menu ul {
     list-style: none;
     margin: 0;
@@ -161,7 +189,7 @@ body {
     padding: 0;
 }
 
-#bottom-footer > div {
+#bottom-footer>div {
     width: 100%;
     padding: 2rem;
 }
@@ -170,6 +198,7 @@ body {
     width: 90%;
     height: auto;
 }
+
 #bottom-footer div.last {
     text-align: right;
 }
@@ -178,7 +207,7 @@ body {
     display: inline;
 }
 
-#bottom-footer div.last li + li {
+#bottom-footer div.last li+li {
     margin-left: 1rem;
 }
 
@@ -235,9 +264,15 @@ che segue la rimuovo solo dal ultimo elemento
 }
 
 .articles h4 {
-    margin-top: 5px;
     margin-bottom: 15px;
     font-size: 24px;
+    line-height: 1.2;
+    margin-top: 1rem;
+}
+
+.articles p {
+    line-height: 1.2;
+    margin-bottom: 2rem;
 }
 
 .articles a {
@@ -274,9 +309,21 @@ h2 {
     margin-top: 5px;
 }
 
+h1, 
+h2, 
+h3,
+h4 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
 main {
     width: 1200px;
     margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 /* FORM */
@@ -288,6 +335,7 @@ main.prenota {
 .form-wrapper label {
     width: 50%;
     display: inline-block;
+    line-height: 2.2;
 }
 
 .form-wrapper div {
@@ -309,7 +357,7 @@ main.prenota {
 }
 
 .form-wrapper .align-column {
-    flex-direction:column;
+    flex-direction: column;
 }
 
 .form-wrapper input[type="submit"] {
@@ -323,7 +371,7 @@ main.prenota {
     }
 
     header {
-        height: 80px;        
+        height: 80px;
     }
 
     .homepage header {
