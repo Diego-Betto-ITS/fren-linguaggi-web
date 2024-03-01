@@ -225,6 +225,10 @@ che segue la rimuovo solo dal ultimo elemento
 
 /** / **/
 
+.social-icons {
+    display: flex;
+}
+
 .social-icons img {
     width: 24px;
     height: 24px;
